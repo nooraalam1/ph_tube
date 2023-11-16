@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+
+<body>
+    <h1 class="text-2xl">
+        1) Discuss the scope of var, let, and const
+    </h1>
+    <hr>
+    <p>In JavaScript, var, let, and const are used to declare variables, but they have different scopes and behaviors.
+        <br> <br><br>
+
+    <h2> <b>Var Scope:</b></h2>
+
+    Variables declared with var are function-scoped. This means that they are only accessible within the function in
+    which they are declared.
+    If a variable is declared with var outside of any function, it becomes a global variable, accessible throughout
+    the entire program.
+    var does not have block-level scope. If it is declared within a block (like an if statement or loop), it is
+    still accessible outside of that block. <br> <br><br>
+    <h2><b>
+            Let Scope:</b></h2>
+
+    Variables declared with let are block-scoped. They are only accessible within the block (or statement) in which
+    they are defined.
+    let variables are not hoisted to the top of their scope, unlike var. This means that you cannot use them before
+    they are declared. <br> <br><br>
+    <h2><b>Const Scope:</b></h2>
+
+    const also has block-level scope, similar to let.
+    The key difference is that once a variable is declared with const, its value cannot be reassigned. However, this
+    does not mean that the variable is immutable; it means the variable reference cannot change.
+    </p> <br><br>
+
+    <hr>
+    <h1 class="text-2xl">
+        2) Tell us the use cases of null and undefined
+    </h1>
+    <p>In JavaScript, null and undefined are both special values that represent the absence of a meaningful value. While
+        they are similar in some ways, they are used in slightly different contexts.
+
+    <h2> Null:</h2>
+
+    Explicitly indicating the intentional absence of an object value.
+    Clearing object references to free up memory.
+    As a placeholder for an expected object value that will be assigned later.
+    <h2> Undefined:</h2>
+
+    Default value for uninitialized variables.
+    When a function is called with fewer arguments than declared parameters.
+    Accessing a property that doesn't exist in an object.
+    Implicit return value for functions without a return statement.
+
+
+    </p>
+    <br>
+    <hr>
+    <h1>3) What do you mean by REST API? </h1>
+    <p>REST API stands for Representational State Transfer Application Programming Interface. It is an architectural
+        style for designing networked applications. REST is commonly used in the context of web services and web
+        development.
+
+        RESTful APIs adhere to a set of principles, including:
+
+        Stateless Communication: Each request from a client contains all the information needed to understand and
+        process the request. The server doesn't store any information about the client between requests.
+
+        Client-Server Architecture: The client and server are separate entities that communicate over a network. The
+        client is responsible for the user interface, and the server is responsible for processing requests and managing
+        resources.
+
+        Uniform Interface: A set of standardized rules and conventions that simplify and enhance the architecture. This
+        includes resources identified by URIs, a constrained set of well-defined operations (e.g., GET, POST, PUT,
+        DELETE), and a uniform way of representing resources (e.g., JSON or XML).
+
+        Stateless Communication: Each request from a client contains all the information needed to understand and
+        process the request. The server doesn't store any information about the client between requests.
+
+        Resource-Based: Resources, such as data objects or services, are identified by URIs (Uniform Resource
+        Identifiers) and are manipulated using standard HTTP methods.
+
+        RESTful APIs are widely used in web development to enable communication between different systems over the
+        internet. They provide a scalable and flexible way for applications to interact with each other.</p>
+    <br>
+    <hr>
+</body>
+
+</html>
