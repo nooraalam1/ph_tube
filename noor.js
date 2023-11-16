@@ -12,7 +12,7 @@ function display(data){
   
     for(let i of a){
         let c = document.createElement('div');     
-        c.innerHTML = `<button class="btn btn-primary" onclick="clk('${i.category_id}')" > "${i.category}" </button>`
+        c.innerHTML = `<button class="btn btn-primary" onclick="clk('${i.category_id}')" > ${i.category} </button>`
         b.appendChild(c);
         
     }
@@ -35,23 +35,21 @@ function display2(data2){
   console.log(zz)
    let d= document.getElementById('appendDiv')
    d.innerHTML = "";
-   
+    let number=[];
    for(let i of zz){
     let e = document.createElement('div')
     
 
 
     let time_date = i.others?.posted_date;
-    console.log(time_date);
+    
     if(time_date>0){
         var y,z,zzz;
     y=parseInt(time_date/3600);
-        console.log(y ,"hr");
         time_date = time_date%3600;
         z=parseInt(time_date/60);
-        console.log(z ,"min");
         zzz=parseInt(time_date-(z*60));
-        console.log(zzz,"sec")
+       
     }
     else{
         y=0;
@@ -76,11 +74,9 @@ function display2(data2){
     d.appendChild(e);
     
    }
+   
 
 }
 
  clk(1000);
-
-
-//
 
